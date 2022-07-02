@@ -52,7 +52,7 @@
 #header .menuBars i {}
 
 /* common */
-h2 {font-size: var(--p-16);font-size: var(--p-16);font-weight: bold;margin-bottom: 9px;}
+h2,h3 {font-size: var(--p-16);font-size: var(--p-16);font-weight: bold;margin-bottom: 9px;}
 #notice, #recommend, #customer ,#banner  {border-bottom: 1px solid var(--gray-gray-02);}
 #banner {margin: 15px 0;}
 
