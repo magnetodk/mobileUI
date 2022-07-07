@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("fonts.css");
+
+$primary-color: #005ba6;
+$secondary-color:#0c256a;
+$orange:#ef8b15;
+$pink:#ac508d;
+$green:#08c16c;
+$lightblue:#e8fbff;
+$white:#fff;
+$balck:#000;
+$gray-01:#f6f6f6;
+$gray-02:#e8e8e8;
+$gray-03:#bdbdbd;
+$gray-04:#666;
+
+$font-size-56:3.5rem;
+$font-size-32:2rem;
+$font-size-24:1.5rem;
+$font-size-22:1.375rem;
+$font-size-20:1.25rem;
+$font-size-18:1.125rem;
+$font-sie-16:1rem;
+$font-sie-14:0.875rem;
+$font-sie-11:0.6875rem;
+$font-sie-10:0.625rem;
+
+$radius:5px;
+
+/* Universal tags */
+* {
+  box-sizing:border-box;
+}
+
+/* clearfix (float 된 요소를 clear)  */
+        /* @include clearfix; */
+        @mixin clearfix {
+          *zoom: 1;
+          &:before, &:after {
+              content: " ";
+              display: table;
+          }
+          &:after {
+              clear: both;
+          }
+      }
+
+   /* text-ellipsis (말줄임..)  */
+        /* @param : $line ( 기본값 1 줄 ) */
+        @mixin ellipsis($line: 1) {
+          @if ($line == 1) {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+          } @else { 
+              display: -webkit-box;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: $line;
+          }
+      }
+
+
+      /* @include opacity(.5) */
+      @mixin opacity($opacity) {
+          opacity: $opacity;
+          $opacity-ie: $opacity * 100;
+          filter: alpha(opacity=$opacity-ie); /* IE8 */
+      }
+
+#header {
+  background-color: $primary-color;
+  color: $white;
+  text-align: center;
+  .menu__box {display: none;}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+
+  h3{
+    position: absolute;right: 0;top: 0;
+  }
+}
+
+@mixin box-style ($font-color:#fff, $bg-color:#005ba6){
+  width: 33.333%;
+  padding: 10px 0;
+  border: 1px solid $gray-03;
+  background-color: $primary-color;
+  color: $font-color;
+  text-align: center;
+}
+
+p {
+  @include box-style(#ff0 , #000);
+}
+
+.player {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.player iframe {
+  position: absolute;left: 0;top: 0;
+  width: 100%;height: 100%;
+}
+

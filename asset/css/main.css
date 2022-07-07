@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url("reset.css");
+@import url("fonts.css");
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+/* clearfix (float 된 요소를 clear)  */
+/* @include clearfix; */
+/* text-ellipsis (말줄임..)  */
+/* @param : $line ( 기본값 1 줄 ) */
+/* @include opacity(.5) */
+#header {
+  background-color: #005ba6;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+}
+#header .menu__box {
+  display: none;
+}
+#header h3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+p {
+  width: 33.333%;
+  padding: 10px 0;
+  border: 1px solid #bdbdbd;
+  background-color: #005ba6;
+  color: #ff0;
+  text-align: center;
+}
+
+.player {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.player iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */

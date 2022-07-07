@@ -50,12 +50,16 @@
 #header h1 {font-size:var(--h6-18);line-height: 54px;}
 #header .backBtn {position: absolute;left: 20px;top: 19px;}
 #header .backBtn i {font-size: var(--h6-18);}
+.header_close {position: absolute;right: 16px;top: 16px;color: var(--white);font-size: var(--h5-20);}
 
 /* common */
 h2,h3 {font-size: var(--p-16);font-size: var(--p-16);font-weight: bold;margin-bottom: 9px;}
 section {border-bottom: 1px solid var(--gray-gray-02);}
 /* #notice, #recommend, #customer ,#banner  {border-bottom: 1px solid var(--gray-gray-02);} */
 #banner {margin: 15px 0;}
+i > .fa-times::before {
+  font-family: 'Font Awesome 5 free';
+}
 
 
 /* notice */
@@ -146,18 +150,93 @@ color: var(--blue-blue-primary);margin-top: 5px;font-weight: bold;}
 .faq_list li a {font-weight: bold;display: block;cursor: pointer;}
 .faq_list li a:hover {color: var(--blue-blue-primary);}
 
-.inner_faq {}
+.inner_faq {display: none;}
 .inner_faq li {line-height: 52px;padding-left: 60px;}
 .inner_faq li:nth-child(1) {background: url(../img/faq06.svg) no-repeat 10px 12px/ 4%;}
 .inner_faq li:nth-child(2) {background: url(../img/faq07.svg) no-repeat 10px 12px/ 4%;}
 
+/* innput wrap */
+#inputWrap {border-bottom: 0;}
+.inputWrap {padding-top: 49px;}
+.inputWrap h2 {font-size: var(--p-14);}
+.inputWrap .tit {display: flex;justify-content: space-between;}
+.inputWrap p i {color: var(--blue-blue-primary);font-size: var(--p-11);}
+.inputWrap p span {font-size: var(--p-11);}
+.inputWrap input {width: 100%;background-color: var(--light-blue);border-radius: var(--round);border: 1px solid var(--gray-gray-03);padding: 6px 5px;}
+.inputWrap > div:nth-of-type(2) {display: flex;justify-content: space-between;align-items: center;margin-top: 3px;}
+.inputWrap > div:nth-of-type(2) input {background-color: var(--white);}
+.inputWrap input::placeholder {font-size: var(--p-10);}
+
+.certifi {display: flex;justify-content: space-between;flex-wrap: wrap;}
+.certifi li {border: 1px solid var(--gray-gray-03);width: 33.333%;text-align: center;}
+.certifi li.on {background-color:var(--blue-blue-primary);color: var(--white);
+border:0;}
+.certifi li a {display: block;padding: 12px 4px;}
+.certifi li a:hover {background-color: var(--blue-blue-primary);color: var(--white);border: 0;}
+
+.agreeBox {background-color: var(--light-blue);padding: 16px 26px;margin-top: 14px;}
+.agreeBox input[type="checkbox"]{display:none}
+.agreeBox input[type="checkbox"] + label span{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  vertical-align:middle;
+  background: url(../img/checkbox.svg) no-repeat 0 0 / cover;
+  opacity: 0.3;
+  transition: opacity 0.25s ease-in;
+}
+.agreeBox input[type="checkbox"]:checked + label span{
+  background: url(../img/checkbox.svg) no-repeat 0 0 / cover;
+  opacity: 1;
+
+  /* 구글에서 가져온 이미지입니다, 원하는 이미지로 변경하면 됩니다. *
+  background:url(https://icon-icons.com/icons2/930/PNG/48/check_icon-icons.com_72363.png); 
+  
+  /*   이미지 크기가 체크박스보다 크다면 cover를 적용 */
+  /*   background-size:cover; */
+}
 
 
+.checkList {margin-top: 20px;}
+.checkList li {position: relative;padding: 6px 5px;}
+.checkList li a {
+  position: absolute;right: 0;top: 6px;
+  display: block;width: 20px;height: 20px;
+}
+.checkList li a::before {
+  content: '\f054';
+  color: var(--gray-gray-03);
+}
 
-
-
-
-
+.numCheck {margin-top: 20px;}
+.numCheck > input {margin-bottom: 3px;}
+.numCheck > div {position: relative;}
+.numCheck > div input {
+  background-color: var(--white);
+}
+.numCheck > div button {
+  position: absolute;right: 0;top: 0;
+  background-color: var(--blue-blue-primary);
+  color: var(--white);
+  z-index: 1;
+  font-size: var(--p-10);
+  padding: 10px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.final {
+  background:var(--blue-blue-secondary);
+  color: var(--white);
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 3px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.final:hover {
+  background-color: var(--blue-blue-primary);
+  transition: 0.5s;
+}
 
 
 

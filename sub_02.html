@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="author" content="magneto">
+  <meta name="description" content="보이는 ARS를 만나 보세요">
+  <meta name="keywords" content="모바일 보이는 ARS">
+  <title>mobile UI (feat.figma)</title>
+  <script src="https://kit.fontawesome.com/d0962eae3e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+  <header id="header">
+        <a href="index.html" class="backBtn"><i class="fas fa-arrow-left"></i></a>
+        <h1>본인인증</h1>
+        <a href="javascript:history.back;" class="header_close"><i class="fa fa-times"></i></a>
+  </header>
+  <!-- //header -->
+
+  <main>
+    <section id="inputWrap">
+      <div class="container">
+        <div class="row">
+          <article class="inputWrap">
+            <div class="tit">
+              <h2>정보입력</h2>
+              <p>
+                <i class="fas fa-info-circle"></i>
+                <span>주민등록번호 도용금지 안내</span>
+              </p>
+            </div>
+            <input type="text" placeholder="허승혁">
+            <div>
+              <input type="text" placeholder="주민번호 앞 6자리"> -
+              <input type="text" placeholder="">
+            </div>
+            <!-- 정보입력 -->
+
+            <h2 class="mt20">핸드폰 인증</h2>
+            <ul class="certifi">
+              <li class="on"><a href="#">SKT</a></li>
+              <li><a href="#">KT</a></li>
+              <li><a href="#">LGU+</a></li>
+              <li><a href="#">SKT 알뜰폰</a></li>
+              <li><a href="#">KT 알뜰폰</a></li>
+              <li><a href="#">LGU+ 알뜰폰</a></li>
+            </ul>
+            <!-- 핸드폰 인증 -->
+
+            <div class="agreeBox">
+              <input type="checkbox" name="agree" id="agree">
+              <label for="agree">
+                <span></span>
+                휴대폰 본인 인증 통신사 동의</label>
+            </div>
+
+            <ul class="checkList">
+              <li>
+                <input type="checkbox" name="check1" id="check1">
+                <label for="check1">개인정보 수집 이용 활용 동의</label>
+                <a href="#" onclick="alert('내용보기1');"><span class="ir_su">내용보기</span></a>
+              </li>
+  
+              <li>
+                <input type="checkbox" name="check2" id="check2">
+                <label for="check2">고유 식별 번호 처리 동의</label>
+                <a href="#" onclick="alert('내용보기2');"><span class="ir_su">내용보기</span></a>
+              </li>
+  
+              <li>
+                <input type="checkbox" name="check3" id="check3">
+                <label for="check3">본인 확인 이용약관</label>
+                <a href="#" onclick="alert('내용보기3');"><span class="ir_su">내용보기</span></a>
+              </li>
+  
+              <li>
+                <input type="checkbox" name="check4" id="check4">
+                <label for="check4">통신사 본인 확인 이용약관</label>
+                <a href="#" onclick="alert('내용보기4');"><span class="ir_su">내용보기</span></a>
+              </li>
+            </ul>
+            <!-- 동의체크 -->
+
+            <div class="numCheck">
+              <input type="number" placeholder="010 8656 4004">
+              <div>
+                <input type="number" name="num" id="num" placeholder="인증번호입력">
+                <button type="submit">인증요청</button>
+              </div>
+            </div>
+            <!-- 인증요청 -->
+
+            <button type="submit" class="final">인증하기</button>
+
+            
+            
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- //main -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <footer id="footer_nav">
+    <h2 class="ir_su">하단 네비게이션</h2>
+    <ul class="footer_nav">
+      <li><a href="#"><img src="asset/img/nav01.svg" alt="nav01">지점찾기</a></li>
+      <li><a href="#"><img src="asset/img/nav02.svg" alt="nav02">음성ARS</a></li>
+      <li><a href="#"><img src="asset/img/nav03.svg" alt="nav03">금융계산기</a></li>
+      <li><a href="#"><img src="asset/img/nav04.svg" alt="nav04">바빌론</a></li>
+    </ul>
+  </footer>
+  <!-- //footer -->
+
+
+
+
+</body>
+
+</html>
